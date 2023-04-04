@@ -27,6 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
+            "browserTarget": "authopher-client:build",
             "proxyConfig": "src/proxy.conf.json",
             "scripts": []
           },
