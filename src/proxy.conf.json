@@ -1,6 +1,0 @@
-{
-    "/api": {
-    "target": "https://authopher-server.vercel.app",
-    "secure": false
-    }
-}
