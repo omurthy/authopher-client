@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-15-jwt-auth": {
+    "authopher-client": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-15-jwt-auth",
+            "outputPath": "dist/authopher-client",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -27,8 +27,6 @@
             "styles": [
               "src/styles.css"
             ],
-            "browserTarget": "authopher-client:build",
-            "proxyConfig": "src/proxy.conf.json",
             "scripts": []
           },
           "configurations": {
@@ -62,10 +60,11 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-15-jwt-auth:build:production"
+              "browserTarget": "authopher-client:build:production"
             },
-            "development": {
-              "browserTarget": "angular-15-jwt-auth:build:development"
+            "development": {  
+              "browserTarget": "authopher-client:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
